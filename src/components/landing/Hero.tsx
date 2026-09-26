@@ -10,9 +10,8 @@ interface HeroProps {
 
 export const Hero: React.FC<HeroProps> = ({ onScrollToCockpit, onScrollToMcp }) => {
   return (
-    <section className="relative overflow-hidden border-b border-[#1e293b] py-16 sm:py-24">
-      {/* Background Subtle Metrology Grid */}
-      <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(to_right,#1e293b08_1px,transparent_1px),linear-gradient(to_bottom,#1e293b08_1px,transparent_1px)] bg-[size:32px_32px]" />
+    <section className="relative overflow-hidden border-b border-[#1e293b] py-12 sm:py-16">
+      {/* Clean bg */}
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Beat 1: Eyebrow Badge */}
@@ -24,15 +23,15 @@ export const Hero: React.FC<HeroProps> = ({ onScrollToCockpit, onScrollToMcp }) 
         </div>
 
         {/* Beat 2: Massive Headline */}
-        <h1 className="mt-6 font-mono text-4xl font-extrabold tracking-tight text-white sm:text-6xl lg:text-7xl">
+        <h1 className="mt-6 font-mono text-4xl font-extrabold tracking-tight text-white sm:text-6xl lg:text-7xl text-balance">
           Compilers check syntax.<br />
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-teal-300 to-sky-400">
+          <span className="text-emerald-400">
             Parity checks truth.
           </span>
         </h1>
 
         {/* Beat 3: Visceral One-Liner */}
-        <p className="mt-6 max-w-3xl text-base text-[#94a3b8] sm:text-lg sm:leading-relaxed">
+        <p className="mt-6 max-w-3xl text-base text-[#94a3b8] sm:text-lg sm:leading-relaxed text-pretty">
           Enterprise modernization without behavioral equivalence is a <span className="font-semibold text-white">$42M production outage</span> waiting to happen. Parity synthesizes 5,000 adversarial boundary vectors in-browser to mathematically prove IBM Bob&apos;s modern rewrites match legacy mainframe code bit-for-bit.
         </p>
 
@@ -56,7 +55,7 @@ export const Hero: React.FC<HeroProps> = ({ onScrollToCockpit, onScrollToMcp }) 
         </div>
 
         {/* Beat 5: 3-Card Economic Friction Grid */}
-        <div className="mt-16 grid grid-cols-1 gap-6 sm:grid-cols-3">
+        <div className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-3">
           {/* Card 1: Economic Outage Friction */}
           <div className="obsidian-card p-6 border-l-2 border-l-red-500/80">
             <div className="flex items-center justify-between">

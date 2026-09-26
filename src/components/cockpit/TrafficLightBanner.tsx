@@ -19,7 +19,7 @@ export const TrafficLightBanner: React.FC<TrafficLightBannerProps> = ({
 
   if (isParity) {
     return (
-      <div className="relative overflow-hidden rounded-xl border border-emerald-500/40 bg-gradient-to-r from-emerald-950/40 via-[#0d1f18] to-emerald-950/40 p-5 shadow-lg shadow-emerald-950/30">
+      <div className="relative overflow-hidden rounded-xl border border-emerald-500/40 bg-emerald-950/30 p-5">
         <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
           <div className="flex items-start gap-4">
             <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-emerald-500/15 border border-emerald-500/40 text-emerald-400">
@@ -57,7 +57,7 @@ export const TrafficLightBanner: React.FC<TrafficLightBannerProps> = ({
   }
 
   return (
-    <div className="relative overflow-hidden rounded-xl border border-red-500/40 bg-gradient-to-r from-red-950/40 via-[#1f0d0d] to-red-950/40 p-5 shadow-lg shadow-red-950/30">
+    <div className="relative overflow-hidden rounded-xl border border-red-500/40 bg-red-950/30 p-5">
       <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
         <div className="flex items-start gap-4">
           <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-red-500/15 border border-red-500/40 text-red-400">

@@ -40,9 +40,12 @@ export const WorkingCockpit: React.FC<WorkingCockpitProps> = ({
   const handleTogglePatch = () => {
     if (!isPatched) {
       confetti({
-        particleCount: 80,
-        spread: 70,
+        particleCount: 50,
+        spread: 60,
         origin: { y: 0.6 },
+        gravity: 1.2,
+        decay: 0.94,
+        ticks: 120,
         colors: ['#10b981', '#3b82f6', '#f8fafc'],
       });
     }
@@ -65,7 +68,7 @@ export const WorkingCockpit: React.FC<WorkingCockpitProps> = ({
           <div>
             <div className="flex items-center gap-2 font-mono text-xs font-semibold uppercase tracking-wider text-[#3b82f6]">
               <Activity className="h-4 w-4" />
-              <span>Surface 2: Differential Execution Cockpit</span>
+              <span>Verification Cockpit</span>
             </div>
             <h2 className="mt-1 font-mono text-2xl font-bold text-white sm:text-3xl">
               Live Behavioral Metrology Console

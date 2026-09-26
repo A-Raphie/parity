@@ -68,7 +68,7 @@ export const ProofRail: React.FC<ProofRailProps> = ({ currentScenario, report })
           <div>
             <div className="flex items-center gap-2 font-mono text-xs font-semibold uppercase tracking-wider text-emerald-400">
               <Shield className="h-4 w-4" />
-              <span>Surface 3: Cryptographic Proof Rail &amp; MCP Integration</span>
+              <span>Proof Rail &amp; MCP Integration</span>
             </div>
             <h2 className="mt-1 font-mono text-2xl font-bold text-white sm:text-3xl">
               Auditable Attestation &amp; Bob 2.0 Loop
@@ -143,9 +143,7 @@ export const ProofRail: React.FC<ProofRailProps> = ({ currentScenario, report })
             </div>
 
             <div className="relative rounded-lg border border-[#1e293b] bg-[#070b12] p-4">
-              <pre className="max-h-96 overflow-y-auto font-mono text-xs leading-relaxed text-[#38bdf8]">
-                <code>{JSON.stringify(mcpPacket, null, 2)}</code>
-              </pre>
+              <pre className="max-h-96 overflow-y-auto font-mono text-xs leading-relaxed text-[#38bdf8]"><code>{JSON.stringify(mcpPacket, null, 2)}</code></pre>
             </div>
           </div>
         )}

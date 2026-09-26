@@ -83,7 +83,7 @@ export const VectorScrubber: React.FC<VectorScrubberProps> = ({
             max={vectors.length - 1}
             value={currentIndex}
             onChange={handleSliderChange}
-            className="w-full accent-[#3b82f6] cursor-pointer h-2 bg-[#1e293b] rounded-lg appearance-none"
+            className="w-full cursor-pointer"
           />
 
           <div className="flex items-center justify-between text-[11px] text-[#64748b]">
@@ -100,9 +100,7 @@ export const VectorScrubber: React.FC<VectorScrubberProps> = ({
               <span>INPUT BOUNDARY VECTOR</span>
               <span className="text-[#3b82f6]">#{currentIndex}</span>
             </div>
-            <pre className="mt-2 max-h-40 overflow-y-auto font-mono text-[11px] leading-relaxed text-[#94a3b8]">
-              {JSON.stringify(currentVector.input, null, 2)}
-            </pre>
+            <pre className="mt-2 max-h-40 overflow-y-auto font-mono text-[11px] leading-relaxed text-[#94a3b8]">{JSON.stringify(currentVector.input, null, 2)}</pre>
           </div>
 
           {/* Legacy Output */}
@@ -111,9 +109,7 @@ export const VectorScrubber: React.FC<VectorScrubberProps> = ({
               <span>LEGACY ENGINE OUTPUT</span>
               <span>BASELINE</span>
             </div>
-            <pre className="mt-2 max-h-40 overflow-y-auto font-mono text-[11px] leading-relaxed text-[#cbd5e1]">
-              {JSON.stringify(currentResult?.legacyOutput, null, 2)}
-            </pre>
+            <pre className="mt-2 max-h-40 overflow-y-auto font-mono text-[11px] leading-relaxed text-[#cbd5e1]">{JSON.stringify(currentResult?.legacyOutput, null, 2)}</pre>
           </div>
 
           {/* Modern Output & Delta */}
@@ -149,9 +145,7 @@ export const VectorScrubber: React.FC<VectorScrubberProps> = ({
               </span>
             </div>
 
-            <pre className="mt-2 max-h-40 overflow-y-auto font-mono text-[11px] leading-relaxed text-[#cbd5e1]">
-              {JSON.stringify(currentResult?.modernOutput, null, 2)}
-            </pre>
+            <pre className="mt-2 max-h-40 overflow-y-auto font-mono text-[11px] leading-relaxed text-[#cbd5e1]">{JSON.stringify(currentResult?.modernOutput, null, 2)}</pre>
 
             {currentResult?.delta && (
               <div className="mt-2 rounded border border-red-500/30 bg-red-950/50 p-2 font-mono text-[11px] text-red-300">

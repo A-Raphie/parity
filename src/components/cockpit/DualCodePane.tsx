@@ -63,9 +63,7 @@ export const DualCodePane: React.FC<DualCodePaneProps> = ({
           </div>
 
           <div className="relative flex-1 overflow-x-auto bg-[#070b12] p-4">
-            <pre className="font-mono text-xs leading-relaxed text-[#cbd5e1] whitespace-pre">
-              <code>{scenario.legacyCode}</code>
-            </pre>
+            <pre className="font-mono text-xs leading-relaxed text-[#cbd5e1] whitespace-pre"><code>{scenario.legacyCode}</code></pre>
           </div>
 
           <div className="border-t border-[#1e293b] bg-[#0d1322]/80 px-4 py-2 font-mono text-[11px] text-[#64748b]">
@@ -118,11 +116,7 @@ export const DualCodePane: React.FC<DualCodePaneProps> = ({
           </div>
 
           <div className="relative flex-1 overflow-x-auto bg-[#070b12] p-4">
-            <pre className="font-mono text-xs leading-relaxed text-[#cbd5e1] whitespace-pre">
-              <code>
-                {isPatched ? scenario.patchedModernCode : scenario.initialModernCode}
-              </code>
-            </pre>
+            <pre className="font-mono text-xs leading-relaxed text-[#cbd5e1] whitespace-pre"><code>{isPatched ? scenario.patchedModernCode : scenario.initialModernCode}</code></pre>
           </div>
 
           <div className="border-t border-[#1e293b] bg-[#0d1322]/80 px-4 py-2 font-mono text-[11px] text-[#94a3b8]">

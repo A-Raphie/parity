@@ -102,18 +102,6 @@ body {
   background: #475569;
 }
 
-/* Subtle glow badges */
-.glow-emerald {
-  box-shadow: 0 0 20px -3px rgba(16, 185, 129, 0.25);
-}
-
-.glow-crimson {
-  box-shadow: 0 0 20px -3px rgba(239, 68, 68, 0.25);
-}
-
-.glow-blue {
-  box-shadow: 0 0 20px -3px rgba(59, 130, 246, 0.25);
-}
 
 /* Pulse animation for active differential fuzzing */
 @keyframes pulse-slow {
@@ -123,4 +111,36 @@ body {
 
 .animate-pulse-slow {
   animation: pulse-slow 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Custom range slider */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: var(--border);
+  border-radius: 4px;
+  height: 6px;
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--ibm-blue);
+  cursor: pointer;
+  border: 2px solid var(--bg);
+  box-shadow: 0 0 0 1px var(--ibm-blue);
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--ibm-blue);
+  cursor: pointer;
+  border: 2px solid var(--bg);
+  box-shadow: 0 0 0 1px var(--ibm-blue);
 }
