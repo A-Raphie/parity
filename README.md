@@ -100,7 +100,7 @@ parity/
 
 ```bash
 # Clone the repository
-git clone https://github.com/winsznx/parity.git
+git clone https://github.com/A-Raphie/parity.git
 cd parity
 
 # Install dependencies (Node 20+ or Bun)

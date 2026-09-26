@@ -37,7 +37,7 @@ export const Footer: React.FC = () => {
             </a>
 
             <a
-              href="https://github.com/winsznx/parity"
+              href="https://github.com/A-Raphie/parity"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-1 hover:text-white transition"
