@@ -1,0 +1,126 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #090d16;
+  --surface: #0d1322;
+  --surface-raised: #131b2e;
+  --surface-elevated: #1a2640;
+  --surface-overlay: rgba(13, 19, 34, 0.95);
+  
+  --border: #1e293b;
+  --border-strong: #2a3955;
+  --border-active: #3b82f6;
+
+  --ibm-blue: #3b82f6;
+  --ibm-blue-soft: rgba(59, 130, 246, 0.1);
+  --ibm-blue-border: rgba(59, 130, 246, 0.3);
+
+  --emerald: #10b981;
+  --emerald-soft: rgba(16, 185, 129, 0.1);
+  --emerald-border: rgba(16, 185, 129, 0.3);
+
+  --crimson: #ef4444;
+  --crimson-soft: rgba(239, 68, 68, 0.1);
+  --crimson-border: rgba(239, 68, 68, 0.3);
+
+  --amber: #f59e0b;
+  --amber-soft: rgba(245, 158, 11, 0.1);
+
+  --ink: #f8fafc;
+  --ink-secondary: #94a3b8;
+  --ink-muted: #64748b;
+
+  --mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  --font: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+
+  --radius-card: 12px;
+  --radius-sm: 6px;
+  --radius-pill: 9999px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--ink);
+  font-family: var(--font);
+  font-size: 14px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* Tabular Numbers for Metrological Readouts */
+.tabular {
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum";
+}
+
+/* Hairline borders and custom obsidian card stylings */
+.obsidian-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.obsidian-card:hover {
+  border-color: var(--border-strong);
+}
+
+.obsidian-panel {
+  background: var(--surface-raised);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+}
+
+/* Custom Scrollbar for Code and Vector Dumps */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-strong);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
+
+/* Subtle glow badges */
+.glow-emerald {
+  box-shadow: 0 0 20px -3px rgba(16, 185, 129, 0.25);
+}
+
+.glow-crimson {
+  box-shadow: 0 0 20px -3px rgba(239, 68, 68, 0.25);
+}
+
+.glow-blue {
+  box-shadow: 0 0 20px -3px rgba(59, 130, 246, 0.25);
+}
+
+/* Pulse animation for active differential fuzzing */
+@keyframes pulse-slow {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
